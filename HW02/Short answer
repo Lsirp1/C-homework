@@ -1,0 +1,10 @@
+2. What is the difference between a function declaration and a function definition? 
+- A function declaration tells the compiler that the function exists. A function definition is what the function does. 
+3. Why does C/C++ need to have function declarations? Why doesn’t Java have them? 
+- C/C++’s compiler only runs through the code once, if it doesn’t see a function declaration and doesn’t know to keep looking for a function if it isn’t defined before its used it will break. Java declares and defines a function at the same time.
+4. What is the C preprocessor and what does it do?
+- It runs before the compiler and prepares code to run for the compiler by carrying out different functions like #include and #define. 
+6.What is wrong with the following: g++ -c thing.h? 
+- Thing is a header file it does not need to be compiled on its own, it only contains function declarations. 
+8.Suppose you have the following: MAX_VALUE 32767, is MAX_VALUE a variable? If not what is it?
+- It is not a variable it is just a value. It is pretty much a constant variable however the compiler doesn’t see it because the preprocessor replaces it, anything with the name MAX_VALUE will be replaced with 32767.
