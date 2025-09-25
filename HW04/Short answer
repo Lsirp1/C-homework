@@ -1,0 +1,11 @@
+Homework 4:
+
+1. Arrays in java are objects, it holds the items and the sizes of the array. C/C++ arrays are chunks of allocated memory, the size isn't kept track of, it also doesn't check if an array index is valid. In java it checks if the array index is valid. 
+
+2. list + 6
+
+5. a + 2, 4
+
+6. Copy doesn't end with a null terminator, after the for loop you could have a line of code: copy[i] = '\0'
+
+13. Data allocated on the stack only remains allocated as long as it is in the scope, and you have to specify how much of it you will use at compile time.  Data allocated in a heap can be allocated with as much memory as is available and will remain allocated until manually deleted. 
