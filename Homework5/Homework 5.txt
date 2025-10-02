@@ -1,0 +1,12 @@
+Homework 5:
+
+1. What is the problem with two-dimensional arrays in C/C++?
+
+	The main problem is the fact that when passing two-dimensional arrays in functions you have to pass in the dimensions of the array as well. Programming for functions with 2D arrays isn't dynamic. 
+
+
+2. Describe two ways to work around C/C++'s problems with two-dimensional arrays.
+
+	The first is called a flattened array which you create knowing the width and height to the array. You skip over some chunk of i data to find j elements within that chunk with the syntax [i][j]. 
+
+	The second is called the numerical recipes trick. Assuming you have the width and height of the array you can allocate an array of pointers that point to specific points of data within a flat array. Similar to the first option in a flat array you skip of some chunk of data to get a certain number of elements within that chunk, however this time you have pointers that point to different chunks of data. 
