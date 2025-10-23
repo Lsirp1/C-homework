@@ -1,0 +1,31 @@
+Homework 6:
+
+1. What are libraries good for?
+
+Linking potentially many object files for code that you may want to use in different projects.
+
+2. What are the two types of libraries and how are they different?
+
+Static library: Works exactly like the object files that make it up. The object files become part of the executable.
+
+Shared object library: They remain separate from the executable, the machine code they contain is loaded by the executable. It also allows you to only need one copy of the library in your system.
+
+3. Why is it better to get a library from a package manager rather than compile it from source yourself? When might it be better to compile a library yourself?
+
+Compiling is a pain in the butt as is and libraries may depend on other projects that you may also have to download and compile. It may be better to compile a library yourself if your making one or one you are looking for isn't in the package manager.
+
+
+4. Suppose you are on macOS and you want to use a library in the file /usr/local/lib/libpng.dylib that has the accompanying header file /usr/local/include/png.h. Suppose also that you program consists of one file called main.cc. Write the makefile for this project.
+
+all: main
+
+main: main.o
+	gcc -o main main.o -L/usr/local/lib -lpng
+
+main.o: main.c png.h
+
+	gcc -c -Wall -Werror main.c -I/usr/local/include
+
+5. What is a struct?
+
+A class with no methods and only public data members. Short for data structure.
