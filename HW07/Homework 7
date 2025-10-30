@@ -1,0 +1,15 @@
+Homework 7:
+
+1. Position and velocity aren't initialized and there is no ";" at the end bracket "}".
+
+2. Position and velocity are declared as ints not doubles, so declare them as doubles. They are also called with this.position and this.velocity when it should be: this->position and this->velocity.
+
+3. A. it takes a pointer to an int and returns a pointer to an int. 
+   B. It will take in a pointer to an int and return a const pointer to an int. 
+   C. It takes a pointer to an int and returns a const pointer to a const int.
+   D. It takes a pointer to a const int and returns a const pointer to a const int.
+   E. Same as D. but you can't change any member variables of the object.
+
+5. A pointer is the memory address of a variable and can be dereferenced to get the variables data. A reference is another way to refer to the same variable.
+
+10. Its redundant it can't effect that data anyways. Value is a copy of whatever variable was passed into the function.
