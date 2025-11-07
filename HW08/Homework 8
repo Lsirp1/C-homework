@@ -1,0 +1,11 @@
+Homework 8:
+
+2. Ownership pertains to who or what is responsible managing for memory.
+
+5. The function is trying to reference a local variable, that variable gets destroyed, it should instead return an object value.
+
+8. Copying allows the creation of two independent objects with the same value. Moving allows a temporary objects ownership of its resources to be moved to another object because the temporary object will be destroyed. 
+
+12. You need forward declarations when either two classes depend on each other (to prevent circular dependency) or when you only need to use a pointer or reference to a class without needing its full definition.
+
+13. It is trying to initialize an entirely new and fully defined Part p only using a forward declaration. It needs to include Part's header file. 
