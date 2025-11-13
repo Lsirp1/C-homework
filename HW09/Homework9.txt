@@ -1,0 +1,12 @@
+Homework 9: 
+
+
+2.You would want to mark a method as virtual to overwrite a super classes methods for inheritance to work properly. The only time you wouldn't is when you are for some odd reason using a lot of sub classes on a computer with low memory. 
+
+4. Dynamic casting looks at the actual type of object being cast and checks if its legal to cast it to the type requested. Static casting does not look at the actual object type and it only checks what it can at compile time. You typically want to use a dynamic cast over a static cast because of safety. Although you may want to use a static cast if you are certain it is safe and you need the little bit of speed it can give you. 
+
+6. void eat (Fruit f); creates a copy of the fruit passed into it and it can edit the fruit. void eat (const Fruit& f) takes the original fruit passed through and treats is as const, it won't modify the value. 
+
+7. if (dynamic_cast<Quadrilateral*>(s) != nullptr) std::cout<<"Its a quadrilateral! Wowo!"<<std::endl;
+
+9. Its throwing an exception on the heap which could lead to a memory leak. It would be best to remove the new and throw it on the stack so it can be cleaned up correctly.
