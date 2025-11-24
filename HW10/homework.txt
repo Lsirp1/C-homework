@@ -1,5 +1,9 @@
-1.
-2.
-5.
-7.
-8.
+1. A template lets you write generic code, in which any data type can be used for. 
+
+2. The fundamental difference is in how they handle data types. Templates in C++ allow any data type to be used, it doesn't have to be specified. 
+
+5. An itertator is a class that represents thte current element of a template and lets you move from one element to the next. 
+
+7. In java the <> are optional, whatever data type is in the <> is what the objects being inserted will be cast too. In C++ you are creating an entirely new class that is custom written to contain whatever data type is in the <>. 
+
+8. They have no way to intialize the references when you create them. 
